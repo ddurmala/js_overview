@@ -1,29 +1,33 @@
+const str = 'some string';
+const num = 10;
+const bool = true;
+const arr = ['john', 'kyle', 'bridget'];
 
-/*function myFirstFunc() {
-    console.log('function has been called')
-}
-
-myFirstFunc();*/
-
-/*function add(num1, num2) {
-    console.log(num1 + num2)
-}
-
-add(5, 10);
-
-add(37, 78);
-*/
-
-/*function printValues(num, name, boolean, another) {
-    console.log(boolean);
-}
-
-printValues(10, 'Allen', false, 'another');*/
-
-function printNames(names) {
-    for (const name of names) {
-        console.log(name)
+const data = {
+    name: 'JD',
+    age: 44,
+    info: {
+        location: 'Atl',
+        // hobbies' value is an array - to address a variable w/in an array, use [0] its placement in the array
+        hobbies: [
+            {
+                name: 'Fishing',
+                frequency: 1
+            },
+            {
+                name: 'Pickleball',
+                frequency: 2
+            },
+            {
+                name: 'Yoga',
+                frequency: 3
+            }
+        ]
     }
-}
+};
 
-printNames(['Bob', 'Jim', 'Julie']);
+console.log(data.info.hobbies[1].name)
+
+/*console.log(data.info.hobbies[0].name);
+
+console.log(data.info.hobbies[0].frequency);*/ 
