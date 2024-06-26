@@ -1,0 +1,64 @@
+/* Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Handlee", sans-serif;
+    color: #0e2168;
+}
+
+html, body {
+   height: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+button {
+    border: none;
+}
+
+/* Global Reusable Classes */
+
+.text-center {
+    text-align: center;
+}
+
+.hide {
+    display: none !important;
+}
+
+
+/* Custom Styles */
+
+.modal {
+    position: absolute;
+    top: 45vh;
+    left: 0;
+    right: 0;
+    width: 200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #888;
+    padding: 45px 0;
+    background-color: #afadf4;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.modal button {
+    padding: 8px 15px;
+    margin-top: 15px;
+    background-color: rgb(237, 52, 52);
+    color: white;
+}
